@@ -27,5 +27,6 @@ export async function getStaticProps() {
       results,
       lastUpdate,
     },
+    revalidate: 10,
   };
 }

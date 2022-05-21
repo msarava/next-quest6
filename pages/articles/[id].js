@@ -44,5 +44,6 @@ export async function getStaticProps({ params }) {
   const lastUpdate = generationDate.toString();
   return {
     props: { articleData, lastUpdate },
+    revalidate: 2,
   };
 }

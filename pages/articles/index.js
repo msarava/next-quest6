@@ -29,5 +29,6 @@ export async function getStaticProps() {
       articleList,
       lastUpdate,
     },
+    revalidate: 5,
   };
 }
